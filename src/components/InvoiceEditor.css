@@ -1,0 +1,239 @@
+.invoice-container {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.invoice-table input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.invoice-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.invoice-actions button {
+  margin-right: 10px;
+}
+
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
+
+
+.invoice-actions button:hover {
+  background-color: #006f9a;
+}
+
+.grand-total {
+  font-size: 18px;
+  font-weight: bold;
+}
+.template-wrapper {
+  width: 794px;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.invoice-bg {
+  width: 100%;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+/* Overlay editor in the white box area (adjust as per your design) */
+.editor-overlay {
+  position: absolute;
+  top: 200px;   /* position from top of image */
+  left: 50px;   /* from left */
+  right: 50px;  /* keep it centered */
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 10px;
+  
+}
+
+.date strong{
+  padding-right: 5px;
+}
+
+.back-btn{
+  background-color: antiquewhite;
+  margin-left: 40px;
+}
+
+/* Responsive styles */
+
+/* Root container */
+.invoice-editor {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px #ccc;
+  font-family: sans-serif;
+}
+
+/* Heading */
+.invoice-editor h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Form section */
+.invoice-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.invoice-form label {
+  font-weight: bold;
+}
+
+.invoice-form input,
+.invoice-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* Table styles */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.invoice-table input {
+  width: 80px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+/* Action row (Add Row & Grand Total) */
+.invoice-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.invoice-actions button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.invoice-actions button:hover {
+  background-color: #0056b3;
+}
+
+.grand-total {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Next button */
+.next-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .invoice-editor {
+    padding: 15px;
+  }
+
+  .invoice-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .invoice-table input {
+    width: 60px;
+  }
+
+  .invoice-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grand-total {
+    margin-top: 10px;
+  }
+
+  .next-btn {
+    font-size: 15px;
+  }
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
